@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main () {
+	long *puntero;
+	puntero = (long*) malloc(sizeof(long));
+	*puntero=5;
+	*puntero+= 2;
+	cout <<"valor: " <<*puntero<<endl;
+	free(puntero);
+}

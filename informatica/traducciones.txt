@@ -1,0 +1,4 @@
+1-silla-chair
+2-mesa-table
+3-hormiga-ant
+4-abeja-bee

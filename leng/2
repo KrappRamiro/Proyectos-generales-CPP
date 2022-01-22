@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+#define cantidadDispositivos 30
+
+void ingresarDatos();
+void prueba(int* a);
+
+struct dispositivos {
+	string marca;
+	string funcion;
+	string numSerie;
+	float corriente_mA;
+};
+
+int main() {
+	struct dispositivos datos[cantidadDispositivos];
+
+	int i=5;
+	int resu=0;
+	prueba(&i); //aca paso la direccion de memoria de i
+	cout << i <<endl;
+}
+
+void ingresarDatos(struct dispositivos * datos) { //tipo de dato struct dispositivo, que me pase un puntero que yo llame datos
+
+}
+
+void prueba(int* a) {
+	*a++;
+	return;
+}
